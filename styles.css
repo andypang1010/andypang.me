@@ -20,6 +20,11 @@
 }
 
 /* Built in */
+html {
+    max-width: 100%;
+    /* overflow-x: hidden; */
+}
+
 body {
     line-height: 2;
     font-family: var(--font-main);
