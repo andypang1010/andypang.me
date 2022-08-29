@@ -1,19 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Poppins:wght@400;700&display=swap');
 
+/* Variables */
+:root {
+    --primary-color: black;
+    --box-color: lightgray;
+    --accent-color: #fb421c;
+    --text-color: gray;
+    --font-main: "Poppins", sans-serif;
+    --font-highlight: "Anonymous Pro", monospace;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-size-normal: 17px;
+    --font-size-highlight: 22px;
+}
+
+/* Built in */
 body {
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
     line-height: 2;
-    color: gray;
+    font-family: var(--font-main);
+    font-size: var(--font-size-normal);
+    color: var(--text-color);
+    background-color: white;
+    position: relative;
 }
 
 h1 {
-    font-family: "Anonymous Pro", monospace;
-    color: black;
+    font-family: var(--font-highlight);
+    color: var(--primary-color);
 }
 
+/* Navigation bar */
 .navbar {
-    box-shadow: 0px 0.5px 4px grey;
+    box-shadow: 0.5px 0.5px 4px gray;
 }
 
 .navbar-nav {
@@ -21,43 +39,81 @@ h1 {
 }
 
 .nav-link {
-    font-family: "Anonymous Pro", monospace;
-    font-size: 17px;
-    font-weight: 700;
+    font-family: var(--font-highlight);
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-bold);
     margin-left: 15px;
     margin-right: 15px;
 }
 
 .nav-link:hover {
-    opacity: 70%;
-    color: #fb421c;
+    color: var(--accent-color);
     transition-duration: 0.3s;
 }
 
-.section {
-    margin-top: 175px;
-    margin-bottom: 175px;
-}
-
+/* Section links */
 .link {
-    font-family: "Anonymous Pro", monospace;
-    font-size: 22px;
+    font-family: var(--font-highlight);
+    font-size: var(--font-size-highlight);
     text-decoration: none;
-    color: #fb421c;
+    color: var(--accent-color);
 }
 
 .link:hover {
     opacity: 70%;
-    color: #fb421c;
+    color: var(--accent-color);
     transition-duration: 0.3s;
 }
 
-#Intro {
-    padding: 100px 100px 100px 100px;
+/* Sections */
+.section {
+    margin-top: 175px;
+    margin-bottom: 175px;
+    padding: 100px 75px;
 }
 
+#about-photo {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#signature-photo {
+    width: 400px;
+}
+
+#Projects {
+    margin-bottom: 0px;
+}
+
+/* Cards */
+.card {
+    width: 60%;
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 2px 4px gray;
+    transition: 0.3s;
+}
+
+.card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-title {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.modal-lg {
+    border-radius: 20px;
+}
+
+/* Social media icons */
 .fa-circle {
-    color: gray;
+    color: var(--text-color);
 }
 
 .fa-stack-1x {
