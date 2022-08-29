@@ -14,6 +14,11 @@
     --font-size-highlight: 22px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Built in */
 body {
     line-height: 2;
@@ -22,6 +27,7 @@ body {
     color: var(--text-color);
     background-color: white;
     position: relative;
+    max-width: 100%;
 }
 
 h1 {
@@ -101,14 +107,11 @@ h1 {
     border-top-right-radius: 20px;
 }
 
-.card-title {
+.card-title,
+.modal-title {
     font-family: "Anonymous Pro", monospace;
     font-weight: 700;
     color: var(--accent-color);
-}
-
-.modal-lg {
-    border-radius: 20px;
 }
 
 /* Social media icons */
