@@ -41,6 +41,31 @@ h1 {
     color: var(--primary-color);
 }
 
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(251, 251, 251);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.disappear {
+    animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 /* Navigation bar */
 .navbar {
     box-shadow: 0.5px 0.5px 4px gray;
