@@ -11,7 +11,7 @@
     --font-weight-normal: 400;
     --font-weight-bold: 700;
     --font-size-normal: 17px;
-    --font-size-highlight: 22px;
+    --font-size-highlight: 19px;
 }
 
 * {
@@ -49,34 +49,10 @@ img {
     -ms-user-select: none;
 }
 
-/* Preloader */
-/* #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgb(251, 251, 251);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99999;
-} */
-
-.disappear {
-    animation: vanish 1s forwards;
-}
-
-@keyframes vanish {
-    100% {
-        opacity: 0%;
-        visibility: hidden;
-    }
-}
-
 /* Navigation bar */
 .navbar {
     box-shadow: 0.5px 0.5px 4px gray;
+    opacity: 93%;
 }
 
 .navbar-nav {
@@ -100,6 +76,7 @@ img {
 .link {
     font-family: var(--font-highlight);
     font-size: var(--font-size-highlight);
+    font-weight: var(--font-weight-bold);
     text-decoration: none;
     color: var(--accent-color);
 }
@@ -130,9 +107,9 @@ img {
     margin-bottom: 0px;
 }
 
-/* Cards */
+/* Cards and Modals */
 .card {
-    width: 60%;
+    width: 75%;
     border-radius: 20px;
 }
 
@@ -146,11 +123,21 @@ img {
     border-top-right-radius: 20px;
 }
 
-.card-title,
-.modal-title {
+.card-title {
     font-family: "Anonymous Pro", monospace;
     font-weight: 700;
     color: var(--accent-color);
+}
+
+.modal-title {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    font-size: x-large;
+    color: var(--accent-color);
+}
+
+.modal-body {
+    padding: 50px 100px;
 }
 
 /* Social media icons */
