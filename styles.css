@@ -35,8 +35,10 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
+h1,
+h2 {
     font-family: var(--font-highlight);
+    font-weight: var(--font-weight-bold);
     color: var(--primary-color);
 }
 
