@@ -79,7 +79,7 @@ img {
     font-family: var(--font-highlight);
     font-size: var(--font-size-highlight);
     font-weight: var(--font-weight-bold);
-    text-decoration: none;
+    text-decoration-line: underline;
     color: var(--accent-color);
 }
 
