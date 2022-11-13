@@ -165,20 +165,59 @@
     <div class="container section" id="Projects">
       <div class="row gy-5 gx-0">
 
-        <!-- Lumiere -->
+        <!-- Babblr -->
+        <div class="col-xl-6 col-md-12 d-flex justify-content-center">
+          <div class="card">
+            <img src="media/images/screenshots/babblr-screenshot.png" class="card-img-top" width="100%">
+            <div class="card-body">
+              <h5 class="card-title">&lt;/Babblr&gt;</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Swift UIKit · DeepL API · AssemblyAI API · MongoDB</h6>
+              <button class="btn stretched-link" data-bs-toggle="modal" data-bs-target="#babblr-Modal"
+                style="border: none;"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Babblr modal -->
+        <div class="modal fade" id="babblr-Modal" tabindex="-1" role="dialog" aria-labelledby="babblr-ModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="babblr-ModalLabel">&lt;/Babblr&gt;</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>A real-time text and speech translator that uses <a href="https://www.deepl.com/en/docs-api"
+                    target="_blank">DeepL API</a> for language transaltion and <a href="https://www.assemblyai.com/"
+                    target="_blank">AssemblyAI API</a>
+                  for speech to text transcription. The app also uses <a href="https://www.mongodb.com"
+                    target="_blank">MongoDB</a> to store all the previous translations for
+                  future references and retrieval. This is my second iOS app built with Swift UIKit and has a similar
+                  minimalistic design to my other projects. The app is divided into 3 different tabs based on their
+                  functionalities, one for text-to-text translation, one for speech-to-text transcription and
+                  translation, and the last for storing and managing previous translations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lumiere (iOS) -->
         <div class="col-xl-6 col-md-12 d-flex justify-content-center">
           <div class="card">
             <img src="media/images/screenshots/lumiere-screenshot.png" class="card-img-top" width="100%">
             <div class="card-body">
               <h5 class="card-title">&lt;/Lumiere (iOS)&gt;</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Swift UIKit</h6>
+              <h6 class="card-subtitle mb-2 text-muted">Swift UIKit · Firebase</h6>
               <button class="btn stretched-link" data-bs-toggle="modal" data-bs-target="#lumiereModal"
                 style="border: none;"></button>
             </div>
           </div>
         </div>
 
-        <!-- Lumiere modal -->
+        <!-- Lumiere (iOS) modal -->
         <div class="modal fade" id="lumiereModal" tabindex="-1" role="dialog" aria-labelledby="lumiereModalLabel"
           aria-hidden="true">
           <div class="modal-dialog modal-dialog-scrollable modal-xl modal-dialog-centered" role="document">
@@ -211,58 +250,13 @@
           </div>
         </div>
 
-        <!-- Running Square -->
-        <div class="col-xl-6 col-md-12 d-flex justify-content-center">
-          <div class="card">
-            <img src="media/images/screenshots/running-square-screenshot.png" class="card-img-top" width="100%">
-            <div class="card-body">
-              <h5 class="card-title">&lt;/Running Square&gt;</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Unity 3D</h6>
-              <button class="btn stretched-link" data-bs-toggle="modal" data-bs-target="#running-square-Modal"
-                style="border: none;"></button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Running Square modal -->
-        <div class="modal fade" id="running-square-Modal" tabindex="-1" role="dialog"
-          aria-labelledby="running-square-ModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="running-square-ModalLabel">&lt;/Running Square&gt;</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true"></span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <p>My first complete Unity project inspired by a similar game I have seen earlier in the year.
-                  Completed
-                  all by myself with the occasional help to look up the implementation of certain UI or
-                  functionalities
-                  and reference to the Udemy Unity course by GameDev.tv. This is a 3D game involving a cube that is
-                  constantly accelerating across a game board to reach a
-                  destination. The difficulty of the game increases as the velocity of the cube increases, making it
-                  harder to
-                  control. There will be different types of obstacles on the way: spinning obstacles, arbitrarily
-                  falling obstacles, and stationary obstacles. This is a fun and minimalist game where you get to try
-                  your best to go to the finish line at 4,900m.</p>
-
-                <p>Many thanks to Lexie Shi for helping with the design of the level.</p>
-                <video width="100%" src="media/videos/running-square-demo.mp4" controls="controls"
-                  style="border-radius: 20px;"></video>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <!-- Lumiere (Web) -->
         <div class="col-xl-6 col-md-12 d-flex justify-content-center">
           <div class="card">
             <img src="media/images/screenshots/lumiere-web-screenshot.png" class="card-img-top" width="100%">
             <div class="card-body">
               <h5 class="card-title">&lt;/Lumiere (Web)&gt;</h5>
-              <h6 class="card-subtitle mb-2 text-muted">React.js</h6>
+              <h6 class="card-subtitle mb-2 text-muted">ReactJS · NextJS · Firebase · ChakraUI</h6>
               <button class="btn stretched-link" data-bs-toggle="modal" data-bs-target="#lumiere-web-Modal"
                 style="border: none;"></button>
             </div>
@@ -282,7 +276,8 @@
               </div>
               <div class="modal-body">
                 <p>A website designed and built by Haoxuan and me as the final project for INFO 1998 (Trends in Web
-                  Development), in which we used React.js to build the website, Chakra UI for CSS styling, as well as
+                  Development), in which we used ReactJS to build the website with the help of NextJS, ChakraUI for CSS
+                  styling, as well as
                   FirebaseAuth and FirebaseFirestore as our backend for authentication and data storage. This is a
                   website that allows the user to add movies that they've watched and give a personal rating and
                   comment
@@ -330,6 +325,50 @@
                   improves on the
                   original approach of input control from only using the arrow keys to control the movement of Pac-Man
                   to being able to control the movement of Pac-Man with both arrow keys and mouse.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Running Square -->
+        <div class="col-xl-6 col-md-12 d-flex justify-content-center">
+          <div class="card">
+            <img src="media/images/screenshots/running-square-screenshot.png" class="card-img-top" width="100%">
+            <div class="card-body">
+              <h5 class="card-title">&lt;/Running Square&gt;</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Unity 3D</h6>
+              <button class="btn stretched-link" data-bs-toggle="modal" data-bs-target="#running-square-Modal"
+                style="border: none;"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Running Square modal -->
+        <div class="modal fade" id="running-square-Modal" tabindex="-1" role="dialog"
+          aria-labelledby="running-square-ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="running-square-ModalLabel">&lt;/Running Square&gt;</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>My first complete Unity project inspired by a similar game I have seen earlier in the year.
+                  Completed
+                  all by myself with the occasional help to look up the implementation of certain UI or
+                  functionalities
+                  and reference to the Udemy Unity course by GameDev.tv. This is a 3D game involving a cube that is
+                  constantly accelerating across a game board to reach a
+                  destination. The difficulty of the game increases as the velocity of the cube increases, making it
+                  harder to
+                  control. There will be different types of obstacles on the way: spinning obstacles, arbitrarily
+                  falling obstacles, and stationary obstacles. This is a fun and minimalist game where you get to try
+                  your best to go to the finish line at 4,900m.</p>
+
+                <p>Many thanks to Lexie Shi for helping with the design of the level.</p>
+                <video width="100%" src="media/videos/running-square-demo.mp4" controls="controls"
+                  style="border-radius: 20px;"></video>
               </div>
             </div>
           </div>
